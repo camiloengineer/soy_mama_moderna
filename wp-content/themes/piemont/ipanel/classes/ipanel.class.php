@@ -1217,7 +1217,7 @@ if (!class_exists('IPANEL')) {
 
             } else {
 
-                $fonts_transient = @unserialize(get_transient('theme_googleFonts'));
+                $fonts_transient = maybe_unserialize(get_transient('theme_googleFonts'));
 
                 if ($fonts_transient == false) {
                   $fonts_transient = get_transient('theme_googleFonts');

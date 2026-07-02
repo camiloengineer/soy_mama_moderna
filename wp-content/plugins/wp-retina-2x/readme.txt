@@ -5,7 +5,7 @@ Donate link: https://www.patreon.com/meowapps
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 7.1.7
+Stable tag: 7.1.8
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -192,6 +192,13 @@ Absolutely. Use the built-in Easy IO integration, or enter your own CDN domain i
 Yes! Perfect Images lets you disable any registered size—WordPress defaults, theme sizes, plugin sizes—complete control.
 
 == Changelog ==
+
+= 7.1.8 (2026/06/29) =
+* Fix: Ensure correct file permissions are set for generated WebP and AVIF images.
+* Fix: Preserve original dimensions during retina image upload when they already match.
+* 🎵 Discuss with others about Wp Retina 2x on [the Discord](https://discord.gg/bHDGh38).
+* 🌴 Keep us motivated with [a little review here](https://wordpress.org/support/plugin/wp-retina-2x/reviews/). Thank you!
+* 🥰 If you want to help us, check our [Patreon](https://www.patreon.com/meowapps). Thank you!
 
 = 7.1.7 (2026/05/30) =
 * Fix: Fixed dashboard styling for NekoUI 2026.

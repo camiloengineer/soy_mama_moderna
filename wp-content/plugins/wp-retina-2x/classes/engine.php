@@ -401,6 +401,11 @@ class Meow_WR2X_Engine {
 							
 							$this->resize( $temp_file, $meta['sizes'][$name]['width'], $meta['sizes'][$name]['height'], $crop, $webp_file, $customCrop );
 							
+							// Ensure correct file permissions (the editor uses umask which may result in 0660)
+							if ( file_exists( $webp_file ) ) {
+								chmod( $webp_file, 0644 );
+							}
+							
 							// Clean up temporary file if it was created
 							if ( $temp_file !== $originalfile && file_exists( $temp_file ) ) {
 								unlink( $temp_file );
@@ -572,6 +577,11 @@ class Meow_WR2X_Engine {
 
 					$this->resize( $originalfile, $meta['sizes'][$name]['width'] * 2,
 						$meta['sizes'][$name]['height'] * 2, $crop, $webp_retina_file, $customCrop );
+
+					// Ensure correct file permissions (the editor uses umask which may result in 0660)
+					if ( file_exists( $webp_retina_file ) ) {
+						chmod( $webp_retina_file, 0644 );
+					}
 				}
 				if ( !file_exists( $webp_retina_file ) ) {
 					$this->core->log( "[ERROR] WebP Retina for {$name} could not be created. Full-Size is " . $meta['width'] . "x" . $meta['height'] . " but WebP Retina requires a file of at least " . $meta['sizes'][$name]['width'] * 2 . "x" . $meta['sizes'][$name]['height'] * 2 . "." );

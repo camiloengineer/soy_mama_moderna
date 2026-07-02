@@ -6,7 +6,7 @@
 $piemont_theme_options = piemont_get_theme_options();
 
 $post_loop_details = piemont_get_post_details();
-$post_loop_id = $post_loop_details['post_loop_id'];
+$post_loop_id = $post_loop_details['post_loop_id'] ?? '';
 
 // Blog styles
 if(isset($piemont_theme_options['blog_style'])) {

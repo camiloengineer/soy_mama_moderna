@@ -1,0 +1,38 @@
+# === SECRETOS — NUNCA subir (repo público) ===
+wp-config.php
+*.key
+*.pem
+auth.json
+
+# === Media / uploads (datos, no código) ===
+wp-content/uploads/
+
+# === Cachés y temporales de WordPress ===
+wp-content/cache/
+wp-content/endurance-page-cache/
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+wp-content/temp-write-test-*
+.htaccess.cache.*
+.htaccess.phpupgrader.*
+.htaccess.bak.*
+.htaccess.orig
+error_log
+*.log
+
+# === Backups / dumps ===
+*.zip
+*.tar
+*.tar.gz
+*.sql
+*.sql.gz
+
+# === Estado del deploy FTP ===
+.ftp-deploy-sync-state.json
+
+# === Sistema operativo / editores ===
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

@@ -1,0 +1,157 @@
+/* Animations */
+a,
+a.btn,
+.btn,
+.btn:focus, 
+input[type="submit"],
+.btn:hover, input[type="submit"]:hover,
+.woocommerce #content input.button, 
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button, 
+.woocommerce-page #content input.button, 
+.woocommerce-page #respond input#submit, 
+.woocommerce-page a.button, 
+.woocommerce-page button.button, 
+.woocommerce-page input.button,
+.woocommerce a.added_to_cart, .woocommerce-page a.added_to_cart,
+.woocommerce div.product .woocommerce-tabs ul.tabs li, 
+.woocommerce #content div.product .woocommerce-tabs ul.tabs li, 
+.woocommerce-page div.product .woocommerce-tabs ul.tabs li, 
+.woocommerce-page #content div.product .woocommerce-tabs ul.tabs li,
+.woocommerce div.product .woocommerce-tabs ul.tabs li a,
+.blog-post .more-link,
+.shopping-cart .view-cart,
+.piemont-button a,
+.widget_product_categories a,
+.navbar .nav > li a,
+.woocommerce .widget_layered_nav ul li,
+.woocommerce-page .widget_layered_nav ul li,
+.content-block .widget_meta ul li,
+.woocommerce-page .widget_meta ul li,
+.content-block .widget_archive ul li,
+.woocommerce-page .widget_archive ul li,
+.woocommerce-page .widget_categories ul li,
+.content-block .widget_categories ul li,
+.content-block .widget_pages ul li,
+.woocommerce-page .widget_pages ul li,
+.widget_pages ul li a,
+.widget_meta ul li a,
+.widget_nav_menu a,
+.navigation-paging a,
+.widget_tag_cloud .tagcloud a,
+.widget_product_tag_cloud .tagcloud a,
+#top-link,
+.woocommerce nav.woocommerce-pagination ul li a,
+.woocommerce .widget_layered_nav ul li.chosen a,
+.woocommerce-page .widget_layered_nav ul li.chosen a,
+.woocommerce .widget_layered_nav_filters ul li a,
+.woocommerce-page .widget_layered_nav_filters ul li a,
+.st-menu-close-btn,
+.woocommerce.widget .product-categories li .cat-menu-close {
+    -webkit-transition: color 0.2s ease, background 0.6s ease, border-color 0.2s ease;
+    transition: color 0.2s ease, background 0.6s ease, border-color 0.2s ease;
+}
+.header-menu .search-bar-header .submit,
+.header-menu .menu-top-menu-container-toggle,
+.piemont-post-list .piemont-post-details .piemont-post-title h2,
+.piemont-post-list.piemont-post-style-2 .piemont-next-post,
+body .owl-theme .owl-controls,
+.blog-post-related.blog-post-related-loop .blog-post-related-item .blog-post-related-item-inside,
+.homepage-welcome-block-2 .welcome-image img {
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+#top-link,
+footer #footer-top-button,
+.piemont-post-image-wrapper {
+	-webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.header-menu-bg.sticky-header {
+	-webkit-transition: top 0.3s ease;
+    transition: top 0.3s ease;
+}
+@media (min-width: 768px) {
+	.nav > li > .sub-menu,
+	.nav > li > .children {
+		margin-top: 0;
+	}
+	.nav .sub-menu,
+	.nav .children {
+	    display: block;
+	    margin: 0;
+	    opacity: 0;
+	    transition: margin .3s,opacity .3s,right .3s, transform .3s;
+	    -webkit-transition: margin .3s,opacity .3s,right .3s;
+	    transform: matrix(0, 0, 0, 0, 0, 0);
+	    -ms-transform: matrix(0, 0, 0, 0, 0, 0);
+	    -webkit-transform: matrix(0, 0, 0, 0, 0, 0);
+
+	    -webkit-transform-style: preserve-3d;
+	    -webkit-backface-visibility: hidden;
+	}
+	.nav li:hover > .sub-menu,
+	.nav li:hover > .children {
+	    display: block;
+	    opacity: 1;
+	    margin-top: 0;
+	    transform: matrix(1, 0, 0, 1, 0, 0);
+	    -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+	    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+
+	    webkit-transform-style: preserve-3d;
+	    -webkit-backface-visibility: hidden;
+	}
+	.nav .sub-menu > li > .sub-menu, 
+	.nav .children > li > .children {
+		right: -90%;
+		margin-top: 0;
+	}
+	.nav .sub-menu > li:hover > .sub-menu, 
+	.nav .children > li:hover > .children {
+		right: -99.5%;
+	}
+	.mainmenu-belowheader.menu_light .navbar .nav > li > .sub-menu {
+	    margin-top: 0;
+	}
+	.mainmenu-belowheader.menu_light .navbar .nav > li:hover > .sub-menu {
+	    margin-top: -25px!important;
+	}
+	.header-menu .sub-menu,
+	.header-menu .children {
+	    display: block;
+	    margin-top: 30px;
+	    opacity: 0;
+	    transition: margin .3s,opacity .3s,right .3s, transform .3s;
+	    -webkit-transition: margin .3s,opacity .3s,right .3s;
+	    transform: matrix(0, 0, 0, 0, 0, 0);
+	    -ms-transform: matrix(0, 0, 0, 0, 0, 0);
+	    -webkit-transform: matrix(0, 0, 0, 0, 0, 0);
+
+	    webkit-transform-style: preserve-3d;
+	    -webkit-backface-visibility: hidden;
+	}
+	.header-menu li:hover > .sub-menu,
+	.header-menu li:hover > .children {
+	    display: block;
+	    opacity: 1;
+	    margin-top: 0;
+	    transform: matrix(1, 0, 0, 1, 0, 0);
+	    -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+	    -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+
+	    webkit-transform-style: preserve-3d;
+	    -webkit-backface-visibility: hidden;
+	}
+	.header-menu .sub-menu > li > .sub-menu, 
+	.header-menu .children > li > .children {
+		margin-top: 0;
+		right: -90%;
+	}
+	.header-menu .sub-menu > li:hover > .sub-menu, 
+	.header-menu .children > li:hover > .children {
+		right: -99.5%;
+	}
+}

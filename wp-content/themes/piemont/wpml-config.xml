@@ -1,0 +1,11 @@
+<wpml-config>
+    <admin-texts>
+        <key name="PIEMONT_PANEL">
+            <key name="header_banner_editor" />
+            <key name="blog_homepage_welcome_block_content" />
+            <key name="blog_homepage_welcome_block_2_content" />
+            <key name="footer_copyright_editor" />
+            <key name="footer_instagram_title" />
+        </key>
+    </admin-texts>
+</wpml-config>
